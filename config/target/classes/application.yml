@@ -2,8 +2,11 @@ server:
   port: 8888
 
 spring:
+<<<<<<< HEAD
   application:
     name: config
+=======
+>>>>>>> origin/creacion-micro-config
   cloud:
     config:
       server:
