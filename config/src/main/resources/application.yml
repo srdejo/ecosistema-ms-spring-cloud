@@ -1,19 +1,9 @@
-# HTTP Server
 server:
   port: 8888
 
 spring:
-  # Spring Cloud Config Server Repository
   cloud:
     config:
       server:
         git:
-          uri: https://github.com/srdejo/ConfigTruchas
-
-# Spring properties in case you use different profiles
-profiles:
-  active: dev
-
-endpoints:
-  health:
-    sensitive: false
+          uri: https://github.com/srdejo/config
