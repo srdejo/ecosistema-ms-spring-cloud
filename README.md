@@ -17,3 +17,15 @@ Como es un ecosistema este repositorio en si, no es un proyecto Spring, sino que
 5. Eureka - Registro y descubrimiento de microservicios
 6. Gateway - Puerta del ecosistema
 7. Zipkin - Seguimiento de la traza de las peticiones
+
+##### 1. Repositorio de Configuracion
+
+El repo de configuracion, es el unico que quedo por fuera del ecosistema, lo podemos encontrar en https://github.com/srdejo/config se solucionó el error de status:down cambiando el nombre de la rama principal, main a master.
+
+##### 2. Servidor de Configuracion
+
+Se creo el servidor de configuracion siguiendo las siguientes documentaciones: 
+
+https://spring.io/guides/gs/centralized-configuration/ 
+
+https://medium.com/@migueldoctor/spring-cloud-series-spring-cloud-config-server-con-github-paso-a-paso-135d2b4aaf4c
