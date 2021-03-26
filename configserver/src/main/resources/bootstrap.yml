@@ -11,4 +11,4 @@ spring:
       server:
         git:
           uri: https://github.com/srdejo/ecosistema-ms-spring-cloud.git
-          search-paths: config
+          search-paths: config-enviroment
