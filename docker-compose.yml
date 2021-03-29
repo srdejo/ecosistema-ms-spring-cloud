@@ -1,0 +1,55 @@
+version: '3'
+services:
+    config-server:
+        container_name: config-server
+        build:
+            context: configserver
+            dockerfile: Dockerfile
+        image: config-server:latest
+        ports:
+            - 8888:8888
+        networks:
+            - spring-cloud-network
+    eureka-server:
+        container_name: eureka-server
+        build:
+            context: eurekaserver
+            dockerfile: Dockerfile
+        image: eureka-server:latest
+        ports:
+            - 8099:8099
+        networks:
+            - spring-cloud-network
+    gateway-server:
+        container_name: gateway
+        build:
+            context: gatewayserver
+            dockerfile: Dockerfile
+        image: gateway-server:latest
+        ports:
+            - 8080:8080
+        networks:
+            - spring-cloud-network
+    micro-producto:
+        container_name: micro-producto
+        build:
+            context: micro-producto
+            dockerfile: Dockerfile
+        image: micro-producto:latest
+        ports:
+            - 8091:8091
+        networks:
+            - spring-cloud-network
+    micro-venta:
+        container_name: micro-venta
+        build:
+            context: micro-venta
+            dockerfile: Dockerfile
+        image: micro-venta:latest
+        ports:
+            - 8092:8092
+        networks:
+            - spring-cloud-network
+networks:
+    spring-cloud-network:
+        driver: bridge
