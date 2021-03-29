@@ -23,7 +23,7 @@ services:
     gateway-server:
         container_name: gateway
         build:
-            context: gatewayserver
+            context: gateway
             dockerfile: Dockerfile
         image: gateway-server:latest
         ports:
