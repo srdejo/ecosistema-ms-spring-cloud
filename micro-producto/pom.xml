@@ -11,7 +11,7 @@
 	<groupId>co.srdejo</groupId>
 	<artifactId>micro-producto</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Producto</name>
+	<name>micro-producto</name>
 	<description>micro servicio encargado de gestionar productos</description>
 	<properties>
 		<java.version>11</java.version>

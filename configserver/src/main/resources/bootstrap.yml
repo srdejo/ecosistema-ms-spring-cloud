@@ -12,3 +12,4 @@ spring:
         git:
           uri: https://github.com/srdejo/ecosistema-ms-spring-cloud.git
           search-paths: config-enviroment
+          cloneOnStart: true
