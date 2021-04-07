@@ -6,6 +6,10 @@ logging:
     org:
       springframework: ERROR
 
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-server:8099/eureka/
 ## default connection pool
 # spring:
 #   datasource:

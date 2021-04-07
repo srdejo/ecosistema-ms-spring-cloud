@@ -33,8 +33,8 @@ public class ProductoController {
     @ApiOperation(value = "Permite Listar todas los productos de la base de datos.")
     @GetMapping
     @ResponseBody
-    public ResponseEntity<Producto> findAll() {
-        return productoService.findAll();
+    public ResponseEntity<String> findAll() {
+        return ResponseEntity.ok("prueba");
     }
 
 
