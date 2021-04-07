@@ -6,6 +6,5 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:srdejo/ecosistema-ms-spring-cloud.git
-          default-label: master
+          uri: https://github.com/srdejo/ecosistema-ms-spring-cloud.git
           searchPaths: config-enviroment

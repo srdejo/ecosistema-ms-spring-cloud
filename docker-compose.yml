@@ -6,8 +6,6 @@ services:
             context: configserver
             dockerfile: Dockerfile
         image: config-server:latest
-        ports:
-            - 8888:8888
         networks:
             - spring-cloud-network
     eureka-server:

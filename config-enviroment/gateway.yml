@@ -2,9 +2,13 @@ server:
   port: 8080
 
 eureka:
+  instance:
+    preferIpAddress: true
   client:
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl:
-      defaultZone: http://localhost:8099/eureka/
+      defaultZone: http://eureka-server:8099/eureka/
 spring:
   cloud:
     gateway:
