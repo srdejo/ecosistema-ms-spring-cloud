@@ -9,8 +9,8 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://eureka-server:8099/eureka/
-
-
+    registerWithEureka: false
+    fetchRegistry: true
 
 zuul:
   routes:
